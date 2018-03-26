@@ -3,26 +3,26 @@ var RUNTIME = 'runtime';
 
 // list the files you want cached by the service worker
 PRECACHE_URLS = [
-    "/MindAndFlex/index.html",
-    "/MindAndFlex/img/avatar.jpg",
-    "/MindAndFlex/img/icon.png",
-    "/MindAndFlex/img/footer-logo.png",
-    "/MindAndFlex/img/ic_launcher_4.png",
-    "/MindAndFlex/img/ic_launcher_5.png",
-    "/MindAndFlex/img/learnmindandflexheadersmall.jpg",
-    "/MindAndFlex/home.html",
-    "/MindAndFlex/change_password.html",
-    "/MindAndFlex/courses_library.html",
-    "/MindAndFlex/invite.html",
-    "/MindAndFlex/manifest.json",
-    "/MindAndFlex/my_courses.html",
-    "/MindAndFlex/my_profile.html",
-    "/MindAndFlex/css/mdl/material.min.css",
-    "/MindAndFlex/css/global.css",
-    "/MindAndFlex/js/mdl/material.min.js",
-    "/MindAndFlex/course_view.html",
-    "/MindAndFlex/lecture_view.html",
-    "/MindAndFlex/sign_up.html"
+    "index.html",
+    "img/avatar.jpg",
+    "img/icon.png",
+    "img/footer-logo.png",
+    "img/ic_launcher_4.png",
+    "img/ic_launcher_5.png",
+    "img/learnmindandflexheadersmall.jpg",
+    "home.html",
+    "change_password.html",
+    "courses_library.html",
+    "invite.html",
+    "manifest.json",
+    "my_courses.html",
+    "my_profile.html",
+    "css/mdl/material.min.css",
+    "css/global.css",
+    "js/mdl/material.min.js",
+    "course_view.html",
+    "lecture_view.html",
+    "sign_up.html"
 ];
 
 
