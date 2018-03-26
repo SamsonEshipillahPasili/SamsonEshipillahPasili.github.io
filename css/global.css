@@ -1,0 +1,111 @@
+/* 
+    Created on : Mar 16, 2018, 2:44:43 AM
+    Author     : eshipillah
+*/
+
+.heading{
+    padding-left: -20px; 
+    font-weight: bold;
+    color: white; 
+}
+
+.drawer-title-wrapper {
+    background-color: #eeeeee; 
+}
+
+.header-image{
+    width: 100%;
+}
+
+.profile-photo {
+    width: 41px;
+    height: 41px; 
+    border-radius: 50%;
+    margin-top: 3%;
+}
+
+.instructor-photo{
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+}
+
+.profile-email {
+    font-size: 11.7px;
+}
+
+.logo{
+    width: 90.38px;
+    height: 40px;
+}
+
+.footer-note{
+    color: white;
+}
+
+.log-in-wrapper{
+    align-items: center;
+    justify-content: center;
+}
+
+.instructor-name{
+    margin-left: 10%;
+    font-weight: bold; 
+    font-size: 28px; 
+}
+
+
+.mdl-grid {
+    max-width: 600px;
+}
+.mdl-card__media {
+    margin: 0;
+}
+.mdl-card__media > img {
+    max-width: 100%;
+}
+.mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.mdl-navigation__link{
+    border-bottom: 1px solid darkgray;
+    color: black;  
+}
+
+.first_link{
+    border-top: 1px solid darkgray; 
+}
+
+.logo-wrapper{
+    width: 100%; 
+}
+
+.logo{
+    margin-left: 20%;
+}
+
+.instructor-description {
+    margin-left: 20%;
+}
+
+.instructor-email {
+    margin-left: 40%; 
+    color: green;
+}
+
+video{
+    width: 100%;
+    height: 250px;
+}
+
+select{
+    width:100%; 
+    font-size: 15px;
+}

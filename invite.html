@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mind And Flex</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tell the browser it's a PWA -->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <!-- Tell iOS it's a PWA -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- Add manifest -->
+        <link rel="manifest" href="manifest.json" >
+
+        <!-- include the heading stylesheet --> 
+        <link href="css/global.css" rel="stylesheet" />
+        <!-- include the material design font icons --> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+        <!-- include MDL JS and CSS files --> 
+        <link href="css/mdl/material.min.css" rel="stylesheet" />
+        <script src="js/mdl/material.min.js"></script>
+
+        <!-- Make sure theme-color is defined -->
+    </head>
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="heading-row mdl-layout__header-row">
+                    <!-- Title -->
+                    <div class="mdl-layout-title">
+                        <span class="heading">Invite</span>
+                    </div>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <div class="mdl-layout-title">
+                    <div>
+                        <div class="logo-wrapper">
+                            <img class="logo" src="img/icon.png" alt="logo"/>
+                        </div>
+                        <img src="img/avatar.jpg" alt="photo" class="profile-photo"/>
+                        <span class="profile-email">sameshipilla94@gmail.com</span>
+                    </div>
+                </div>
+                <nav class="mdl-navigation">
+                    <a class="drawer-element mdl-navigation__link" href="home.html">Home</a>
+                    <a class="mdl-navigation__link" href="my_courses.html">My Courses</a>
+                    <a class="mdl-navigation__link" href="my_profile.html">My Profile</a>
+                    <a class="mdl-navigation__link" href="courses_library.html">Course Library</a>
+                    <a class="mdl-navigation__link" href="change_password.html">Change Password</a>
+                    <a class="mdl-navigation__link" href="invite.html">Invite</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <img class="header-image" src="img/learnmindandflexheadersmall.jpg" alt="header-image"/>
+                    <div class="mdl-grid mdl-color--grey-100">
+                        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--grey-200 mdl-color-text--green">
+                                <h2 class="mdl-card__title-text">Invite</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+
+                                    <!-- MDL Tab Container -->
+                                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                        <!-- Tab Bars -->
+                                        <div class="mdl-tabs__tab-bar">
+                                            <a href="#invite-form" class="mdl-tabs__tab is-active">Invite Form</a>
+                                            <a href="#enrollments" class="mdl-tabs__tab">Enrollments</a>
+                                        </div>
+
+                                        <!-- Invite panel, active by default-->
+                                        <div class="mdl-tabs__panel is-active" id="invite-form">
+
+                                            <!-- comma separated emails to be entered here  --> 
+                                            <div class="mdl-textfield mdl-js-textfield">
+                                                <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+                                                <label class="mdl-textfield__label" for="sample5">Enter comma separated emails here.</label>
+                                            </div>
+
+                                           <!-- select option --> 
+                                           <select>
+                                               <option class="mdl-menu__item">--Select Option --</option>
+                                               <option class="mdl-menu__item">-- Option 1 --</option>
+                                               <option class="mdl-menu__item">-- Option 2 --</option>
+                                               <option class="mdl-menu__item">-- Option 2 --</option>
+                                           </select>
+
+                                            <!-- invite button --> 
+                                            <div class="mdl-card__actions mdl-card--border">
+                                                <div class="mdl-layout-spacer"></div>
+                                                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Invite</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Enrollments Panel-->
+                                        <div class="mdl-tabs__panel" id="enrollments">
+
+                                            <!-- student email field --> 
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input class="mdl-textfield__input" type="text" id="course_title" />
+                                                <label class="mdl-textfield__label  test mdl-color--text-green" for="course_title">Student Email</label>
+                                            </div>
+
+                                            <!-- select course --> 
+                                            <select>
+                                                <option>--Select Course--</option>
+                                                    <option class="mdl-menu__item" data-val="DEU">Six Minutes Program</option>
+                                                    <option class="mdl-menu__item" data-val="BLR">Six Minutes Program</option>
+                                                    <option class="mdl-menu__item" data-val="RUS">Six Minutes Program</option>
+                                            </select>
+
+                                            <!-- Search Student --> 
+                                            <div class="mdl-card__actions mdl-card--border">
+                                                <div class="mdl-layout-spacer"></div>
+                                                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Search</button>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                        </div><!-- end log in card --> 
+                    </div>
+                </div>
+
+                <!-- will be replaced with a template in next iteration --> 
+                <footer class="mdl-mega-footer">
+                    <div class="mdl-mega-footer__middle-section">
+                        <h1 class="mdl-mega-footer__heading"><img src="img/footer-logo.png" alt="logo"/></h1>
+                        <p class="footer-note">Balancing mind and body together <br> again </p>
+                    </div>
+
+                    <hr />
+                    <div class="mdl-mega-footer__bottom-section">
+                        <span>Mind and Flex &COPY; 2018 All rights reserved</span>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

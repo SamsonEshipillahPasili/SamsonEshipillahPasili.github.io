@@ -1,0 +1,21 @@
+{
+    "short_name": "Mind And Flex",
+    "name": "Mind And Flex",
+    "icons": [
+        {
+            "src": "img/ic_launcher_5.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "img/ic_launcher_4.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/MindAndFlex/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4caf50",
+    "orientation": "portrait"
+}

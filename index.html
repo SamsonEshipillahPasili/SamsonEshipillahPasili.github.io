@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mind And Flex</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Add manifest -->
+        <link rel="manifest" href="manifest.json">
+        <!-- Tell the browser it's a PWA -->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <!-- Tell iOS it's a PWA -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- include the heading stylesheet --> 
+        <link href="css/global.css" rel="stylesheet" />
+        <!-- include the material design font icons --> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+        <!-- include MDL JS and CSS files --> 
+        <link href="css/mdl/material.min.css" rel="stylesheet" />
+        <script src="js/mdl/material.min.js"></script>
+
+        <script src="worker.js"></script>
+
+        <!-- Make sure theme-color is defined -->
+
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker.register("worker.js")
+                            .then(function (registration) {
+                                console.log("Service Worker registered successfully");
+                            }, function (err) {
+                                console.log("Could not register service worker", err);
+                            });
+                });
+            } else {
+                console.log("Service workers not supported by your browser");
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="heading-row mdl-layout__header-row">
+                    <!-- Title -->
+                    <div class="mdl-layout-title">
+                        <span class="heading">Sign In</span>
+                    </div>
+                </div>
+            </header>
+            <div class="drawer-wrapper mdl-layout__drawer">
+                <div class="mdl-layout-title drawer-title-wrapper">
+                    <div>
+                        <div class="logo-wrapper">
+                            <img class="logo" src="img/icon.png" alt="logo"/>
+                        </div>
+                        <img src="img/avatar.jpg" alt="photo" class="profile-photo"/>
+                        <span class="profile-email">sameshipilla94@gmail.com</span>
+                    </div>
+                </div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">Sign In</a>
+                    <a class="mdl-navigation__link" href="sign_up.html">Sign Up</a>
+                    <a class="mdl-navigation__link" href="home.html">Home (For testing)</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <img class="header-image" src="img/learnmindandflexheadersmall.jpg" alt="header-image"/>
+                    <div class="mdl-grid mdl-color--grey-100">
+                        <div class="mdl-card mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-shadow--6dp">
+                            <div class="mdl-card__title mdl-color--grey-200 mdl-color-text--green">
+                                <h2 class="mdl-card__title-text">Let's Get Started</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="#">
+                                    <!-- email input field --> 
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="text" id="username" />
+                                        <label class="mdl-textfield__label test mdl-color--text-green" for="username">Username</label>
+                                    </div>
+
+                                    <!-- password input field --> 
+                                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                        <input class="mdl-textfield__input" type="password" id="userpass" />
+                                        <label class="mdl-textfield__label" for="userpass">Password</label>
+                                    </div>
+
+                                    <!-- keep me logged in --> 
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Keep me logged in</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <div class="mdl-layout-spacer"></div> 
+                                <!-- sign up --> 
+                                <a href="" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Sign IN
+                                </a>
+                            </div>
+                        </div><!-- end log in card --> 
+                    </div>
+                </div>
+
+                <!-- will be replaced with a template in next iteration --> 
+                <footer class="mdl-mega-footer">
+                    <div class="mdl-mega-footer__middle-section">
+                        <h1 class="mdl-mega-footer__heading"><img src="img/footer-logo.png" alt="logo"/></h1>
+                        <p class="footer-note">Balancing mind and body together <br> again </p>
+                    </div>
+
+                    <hr />
+                    <div class="mdl-mega-footer__bottom-section">
+                        <span>Mind and Flex &COPY; 2018 All rights reserved</span>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>
