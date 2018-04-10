@@ -22,7 +22,8 @@ PRECACHE_URLS = [
     "js/mdl/material.min.js",
     "course_view.html",
     "lecture_view.html",
-    "sign_up.html"
+    "sign_up.html",
+    "https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" // google fonts. 
 ];
 
 
@@ -63,6 +64,6 @@ self.addEventListener('fetch', event => {
                 });
             });
         })
-    );
+                );
     }
 });
